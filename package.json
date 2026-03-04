@@ -1,0 +1,40 @@
+{
+  "name": "health-cli",
+  "version": "1.0.0",
+  "description": "CLI for Project Health Diagnostics — one command to produce an actionable health report",
+  "main": "dist/index.js",
+  "bin": {
+    "health": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "lint": "eslint src --ext .ts",
+    "test": "jest --passWithNoTests"
+  },
+  "keywords": [
+    "health",
+    "diagnostics",
+    "monorepo",
+    "cli",
+    "dependency-audit",
+    "dead-code",
+    "circular-deps"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^12.1.0",
+    "fast-glob": "^3.3.2",
+    "yaml": "^2.3.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

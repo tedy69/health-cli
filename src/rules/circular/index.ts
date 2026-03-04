@@ -1,0 +1,1 @@
+export { circularDepsRule } from './circular';
