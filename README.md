@@ -1,13 +1,16 @@
-# health-cli
+# @tedy69/health-cli
 
 > One command to produce an actionable health report for JS/TS projects: dependency risk, dead code, circular deps, bundle risks, repo hygiene.
+
+[![npm version](https://img.shields.io/npm/v/@tedy69/health-cli)](https://www.npmjs.com/package/@tedy69/health-cli)
+[![license](https://img.shields.io/npm/l/@tedy69/health-cli)](LICENSE)
 
 ## Install
 
 ```bash
-npm install -g health-cli
+npm install -g @tedy69/health-cli
 # or use locally
-npx health-cli scan
+npx @tedy69/health-cli scan
 ```
 
 ## Quick Start
@@ -142,7 +145,7 @@ Structured report for CI artifact storage and programmatic consumption.
 
 ```yaml
 # .github/workflows/health.yml
-- run: npx health-cli scan --format sarif > health.sarif
+- run: npx @tedy69/health-cli scan --format sarif > health.sarif
 - uses: github/codeql-action/upload-sarif@v3
   with:
     sarif_file: health.sarif
